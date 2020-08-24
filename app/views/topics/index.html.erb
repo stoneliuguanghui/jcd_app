@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>kk</title>
+</head>
+<body>
+    <div class="fle-nav">
+        <div class="nav-logo">
+            <%= image_tag(@topic.find_by(name:"logo_jinchengda_logo").avatar_url)%>
+            <ul>
+                <span><a href="#anchor">首页</a></span>
+                <span><a href="#anchor2">公司简介</a></span>
+                <span><a href="#anchor3">企业优势</a></span>
+                <span><a href="#anchor4">案例展示</a></span>
+                <span><a href="#anchor5">商务合作</a></span>
+            </ul>
+        </div>
+    </div>
+
+	<div class="flex-container">
+
+        		
+
+        <div class="flex-item flex-bg1">
+
+        	<div id="box" >
+                <a name="anchor"></a>
+        			<div id="lbt">
+
+        			<li class="lb"><%= image_tag(@topic.find_by(name:"banner_img").avatar_url)%></li>
+        			<li class="lb"><%= image_tag(@topic.find_by(name:"banner2_img").avatar_url)%></li>		
+        			</div>
+
+        			 
+        			<div class="btn" id="prev"><a name="anchor2"></a>prev</div>
+        			<div class="btn" id="next">next</div>	
+        	</div>
+        </div>
+        <div class="flex-item flex-bg2">
+         	 <%= image_tag(@topic.find_by(name:"bannergsjj").avatar_url)%>
+        	<div class="flex-itemgsjj">
+        		<ul>
+        			<div class="gsjj1" id="j1">公司简介</div>
+        			<div class="gsjj2" id="j2">COMPANY PROFILE</div>
+        		</br>
+        			<div class="gsjj3" id="j3">广州金诚达科技有限公司成立于2015年，聚焦在各大平台返利领域。 通过数据分析、消费者需求洞察、专业技术开发、专利外观设计等模式 旨在“让每个人能够最实惠地享受到优质的科技生活”，持续创造让用户惊喜的产品。 以高效、快速、高质量、低成本、经验丰富的企业优势，良好的市场服务，赢得了市场及客户的信赖。</div>
+        		</ul>
+        	</div>
+        	<div class="flex-itemgsjj">
+
+                <%=image_tag(@topic.find_by(name:"bannergongsijianjie").avatar_url)%>
+        	</div>
+           <a name="anchor3"></a>
+        </div>
+        <div class="flex-item flex-bg3">
+            <%=image_tag(@topic.find_by(name:"bannerqyys").avatar_url)%>
+			<div class="flex-itemqyys">
+ 					<ul>
+ 						<div class="qyys" id="q1">企业优势</div>
+ 						<div class="qyys" id="q2">ENTERPRISE ADVANTAGE</div>
+ 					</ul>
+ 				</div>       
+			<div class="flex-itemqyys flex-itemqyyscontain1">
+				<div class="flex-itemqyys1">
+                     <%=image_tag(@topic.find_by(name:"enter_gaoxiaolv").avatar_url)%>
+				</div>
+				<div class="flex-itemqyys1">
+					<%=image_tag(@topic.find_by(name:"enter_jingyanfengfu").avatar_url)%>
+				</div>
+				<div class="flex-itemqyys1">
+                    <%=image_tag(@topic.find_by(name:"enter_jiagedi").avatar_url)%>
+				</div>
+			</div>       
+			<div class="flex-itemqyys flex-itemqyyscontain2">
+				<div class="flex-itemqyys2">
+					<ul>
+						<div class="qyys1">高效率</div>
+						<div class="qyys2">高效、快速、高质量、高水平	</div>
+					</ul>
+				</div>
+				<div class="flex-itemqyys2">
+					<ul>
+						<div class="qyys1">经验丰富</div>
+						<div class="qyys2">专业团队、与时俱进、标准化开发流程</div>
+					</ul>
+				</div>
+				<div class="flex-itemqyys2">
+					<ul>
+						<div class="qyys1">价格低</div>
+						<div class="qyys2">物美价廉、价格公平透明</div>
+					</ul>
+                    <a name="anchor4"></a>
+				</div>
+			</div>       
+     
+		</div>
+        <div class="flex-item flex-item1 flex-bg4">
+        	<div class="flex-itemalzs1">
+        	</br></br>
+        		<ul>
+        			<div class="alzs1">案例展示</div>
+        			<div class="alzs2">CASE SHOW</div>
+        			<div class="alzs3">提供消费者多元化，优质产品信息窗口， 集合行业专业选品团队的优质产品信息，提供给消费者，物美价廉的先上产品， 从而打动消费者 赢得良好口碑，实现平台价值</div>
+        		</ul>
+        	</div>
+        	<div class="flex-itemalzs2">
+        		<div class="flex-itemlogo2 al">
+                    <div class="al1">
+                    <a href="" class="thumbnail">
+                     <%=image_tag(@topic.find_by(name:"case_i-gouyoupin_logo").avatar_url)%>
+                    </a>    
+                    </div>
+                    <div class="al2">综合性购物返利及购物优惠平台</div>
+        		</div>
+        		<div class="flex-itemlogo2 al">
+                    <div class="al1">
+        			<a href="#" class="thumbnail">
+                        <%=image_tag(@topic.find_by(name:"case_chengzijie").avatar_url)%>
+     			</a>
+                    </div>
+                    <div class="al2">综合性购物返利、加油优惠平台</div>
+        		</div>
+        		<div class="flex-itemlogo2 al">
+                    <div class="al1">
+        			<a href="#" class="thumbnail">
+                        <%=image_tag(@topic.find_by(name:"rishengmeizhuang").avatar_url)%>
+        			</a>	
+                    </div>
+                    <div class="al2">美妆专营购物平台</div>
+        		</div>
+        		<div class="flex-itemlogo2 al">
+                    <div class="al1">
+        			<a href="#" class="thumbnail">
+                         <%=image_tag(@topic.find_by(name:"case_zhongyu").avatar_url)%>
+        			</a>
+                    </div>
+                    <div class="al2">人力资源管理、财税服务、法力服务等综合性服务平台</div>
+					
+        		</div>
+        	
+        	
+        		<div class="flex-itemlogo2 al">
+                    <div class="al1">
+        			<a href="#" class="thumbnail">
+                        <%=image_tag(@topic.find_by(name:"case_zhonghuiying").avatar_url)%>
+        			</a>
+                    </div>
+                    <div class="al2">财富金融购物娱乐平台</div>
+					
+        		</div>
+        		<div class="flex-itemlogo2 al">
+                    <div class="al1">
+        			<a href="#" class="thumbnail">
+                        <%=image_tag(@topic.find_by(name:"case_wantejuhe").avatar_url)%>
+        			</a>
+                    </div>
+                    <div class="al2">新型的商业盈利模式平台</div>
+					
+        		</div>
+        		<div class="flex-itemlogo2 al">
+                    <div class="al1">
+        			<a href="#" class="thumbnail">
+                        <%=image_tag(@topic.find_by(name:"case_xibaohui").avatar_url)%>
+        			</a>
+                    </div>
+                    <div class="al2">新型的商业盈利模式平台</div>
+					
+        		</div>
+        		<div class="flex-itemlogo2 al">
+                    <div class="al1">
+        			<a href="#" class="thumbnail">
+                        <%=image_tag(@topic.find_by(name:"case_quanbuanli").avatar_url)%>
+					</a>
+                    </div>
+                    <div class="al2">查看全部案例请联系我们</div>
+                    <a name="anchor5"></a>
+        		</div>
+        	</div>
+        </div>
+        <div class="flex-item flex-item2 flex-bg5">
+            <%=image_tag(@topic.find_by(name:"bannershangyehezuo").avatar_url)%>
+        	<ul>
+        		<div class="swhz1">商 业 合 作</div>
+        		<div class="swhz2">BUSINESS COOPERATION</div></br>
+        		<div class="swhz3">始终秉持与供应商优势互补、相互成就的合作理念，联系我们，成为金诚达的合作伙伴！</div></br>
+        		<div class="swhz3">微信客服:OrangesStreet</div>
+        		<div class="swhz3">邮箱：65289927@qq.com</div>
+        		<div class="swhz3">公司地址：广州市天河区黄村北路26号D 区二楼60028室</div>
+        	</ul>
+        </div>
+
+    </div>
+    <nav class="fix">
+			<div><span class="glyphicon glyphicon-plus icon"></span></div>
+			<div><span class="glyphicon glyphicon-qrcode icon"></span></div>
+			<div><span class="glyphicon glyphicon-star-empty icon"></span></div>
+			<div><span class="glyphicon glyphicon-user icon"></span></div>
+			<div><span class="glyphicon glyphicon-calendar icon"></span></div>
+			<div><span class="glyphicon glyphicon-menu-up icon"></span></div>
+	</nav>
+</body>
+</html>

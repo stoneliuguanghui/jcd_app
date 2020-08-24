@@ -1,0 +1,400 @@
+// Place all the styles related to the Topics controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+body{
+	             background-color: lightgoldenrodyellow;
+
+}
+
+/* 导航栏*/
+ .fle-nav{
+
+        width: 100%;
+    height: 120px;
+    opacity:0.4;
+    position: fixed;
+    background:rgba(0,0,0,1);
+    z-index: 10;
+
+}
+.nav-logo ul{
+    top: 43.3%;
+    float: right;
+    position: absolute;
+    left: 54%;
+    color: red;
+}
+.nav-logo img{
+    padding-left: 18.7%;
+    padding-top: 20px;
+}
+
+.nav-logo ul span {
+    float: left;
+    display: block;
+    width: 150px;
+    font-size: 17px;
+    color: #FFFFFFFF;
+}
+.nav-logo ul span a{
+    color: white;
+    font-weight: 900;
+}
+
+  .flex-container {
+
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            width: 100%;
+            margin: auto;
+            height: 6218px;
+            flex-wrap: nowrap | wrap | wrap-reverse;
+        }
+
+   .flex-container .flex-item{
+   
+            width: 100%;
+            height: 14.66%;
+            
+        }
+  	
+     #box{
+     	width: 100%;
+     	height: auto;
+        
+        position: relative;        
+        overflow: hidden; 
+
+     }
+     .lb{
+     }
+     #lb2{
+      
+     }
+     #box div li{
+        position: absolute;
+     	margin: auto;
+     	padding: 0px;
+     	list-style: none;
+     	width: 100%;
+     	height: 100%;
+     }
+     .btn{
+     	width: 180px;
+     	height: 130px;
+     	background: rgba(0, 0, 0, 0.7);
+     	position: absolute;
+     	top: 400px;
+     	color: #FFFFFF;
+     	text-align: center;
+     	line-height: 90px;
+     	cursor: pointer;
+     }
+     .btn:hover{
+     	background: rgba(0,0,0,0.9);
+     }
+     .btn:active{
+     	background: rgba(0,0,0,0.7);
+     }
+     #next{
+     	right: 0%;
+     } 
+    .flex-container .flex-item1{
+    		width: 100%;
+    		height: 42.49%;
+            
+    }
+    .flex-container .flex-item2{
+    		width: 100%;
+    		height: 840px;
+            
+    }
+    .flex-container .flex-bg1{
+    	display: flex;
+    	flex-direction: row;
+    	width: 100%;
+    	height: 14.66%;
+    }
+    .lb img{
+        
+        width: 100%;
+        height: 912px;
+    }
+
+
+
+/*     公司简介
+ */
+ 	.flex-container .flex-bg2{
+        
+        position: relative;
+ 		display: flex;
+ 		flex-direction: row;
+ 		align-items: center;
+ 		justify-content: center;
+ 		width: 100%;
+ 		height: 14.66%;
+ 	}
+    .flex-bg2 img{
+        
+        width: 100%;
+        height: 912px;
+        position: absolute;
+        z-index: -1;
+    }
+    
+    .flex-bg2 .flex-itemgsjj{
+    	height: 536px;
+    	width: 524px;
+    	margin: 20px;
+    }
+    .flex-itemgsjj img{
+        position: absolute;
+        width: 524px;
+        height: 536px;
+        z-index: 1;
+    }
+    #j1{
+    	color: black;
+    	letter-spacing: 10px;
+    	font-size: 44px;
+    }
+    #j2{
+    	font-size: 	24px;
+    	font-weight: normal;
+    	color: #F6C738;
+    }
+    #j3{
+    	font-size: 16px;
+    	color: #545454;
+    	font-weight: normal;
+    }
+    /* 企业优势L */
+    .flex-container .flex-bg3{
+       
+    	display: flex;
+    	flex-direction: column;
+    	width: 100%;
+    	height: 912px;
+
+    }
+    .flex-bg3 img{
+       position: absolute;
+        height: 912px;
+        width: 100%;
+        z-index: -1;
+    }
+    .flex-bg3 .flex-itemqyys{
+    	width: 100%;
+    	height: 33.33%;
+    }
+    .flex-itemqyys1{
+        position: absolute;
+        width: 298px;
+        height: 298px;
+    }
+
+    .flex-itemqyys ul{
+    	margin-top: 132px;
+
+    	text-align: center;
+    }
+    #q1{
+    	color: #FFFFFF;
+    	font-weight: bold;
+    	letter-spacing: 36px;
+    	font-size: 44px;
+    }
+    #q2{
+    	color: #F6C738;
+    	font-size: 24px;
+    	font-weight: normal;
+    	letter-spacing: 3px;
+    }
+    .flex-itemqyyscontain1{
+        
+    	display: flex;
+    	justify-content: center;
+    	flex-direction: row;
+    	height: 298px;
+    	width: 100%;
+    }
+    .flex-itemqyys1{
+        position: relative;
+         z-index: 1;
+        margin-left: 78px;
+        margin-right: 78px;
+    }
+    .flex-itemqyys1 img{
+    	width: 298px;
+    	height: 298px;	
+    }
+    .flex-bg3{
+        width: 100%;
+        height: 912px;
+    }
+    .flex-itemqyyscontain2{
+    	display: flex;
+    	justify-content: center;
+    	flex-direction: row;
+    	height: 298px;
+    	width: 1920px;
+    }
+    .flex-itemqyys2{
+    	width: 298px;
+    	height: 298px;
+    	margin-left: 78px;
+    	margin-right: 78px;
+    }
+    .flex-itemqyys2 ul .qyys1{
+    	color: #FFFFFF;
+    	font-weight: bold;
+    	font-size: 32px;
+    }
+    .flex-itemqyys2 ul .qyys2{
+    	color: #FFFFFF;
+    	font-weight: normal;
+    	font-size: 20px;
+    }
+/*     案例展示
+ */
+ 	.flex-bg4{
+ 		width: 100%;
+ 		height: 2642px;
+ 		display: flex;
+ 		flex-direction: column;
+
+ 	}
+ 	.flex-bg4 .flex-itemalzs1{
+		margin: 0 auto;
+ 		width: 563px;
+ 		height: 402px;
+ 	}
+ 	.flex-itemalzs1 ul{
+ 		text-align: center;
+ 	}
+ 	.flex-itemalzs1 ul .alzs1{
+ 		font-weight: bold;
+ 		font-size: 44px;
+ 		letter-spacing: 44px;
+ 		color: #1A1A1A;
+ 	}
+ 	.flex-itemalzs1 ul .alzs2{
+ 		font-size: 	24px;
+    	font-weight: normal;
+    	letter-spacing: 22px;
+    	color: #F6C738;
+ 	}
+ 	.flex-itemalzs1 ul .alzs3{
+ 		font-size: 16px;
+    	color: #545454;
+    	font-weight: normal;
+ 	}
+ 	.flex-bg4 .flex-itemalzs2{
+ 		width: 100%;
+ 		height: 2240px;
+ 		display: flex;
+ 		flex-direction: column;
+ 		flex-wrap: wrap;
+ 		justify-content: center;
+ 		background-color: #FFF4F6FE;
+
+ 	}
+
+
+ 	.flex-itemlogo2{
+ 		width: 272px;
+ 		height: 272px;
+ 		margin-top: 5px;
+ 		overflow: hidden;
+        padding-left: 20%;
+ 	}
+
+ 	 .flex-bg5{
+        position: relative;
+    	width: 1920px;
+    	height: 840px;
+
+    }
+    .flex-bg5 img{
+        position: absolute;
+        z-index: -1;
+    }
+    .flex-bg5 ul li{
+    	display: block;
+    	color: white;
+    	text-align: center;
+    }
+    .thumbnail img {
+	width: 100%;
+	
+}
+
+
+.thumbnail .mouseover:hover {
+    transform: scale(1.2, 1.2);
+
+}
+
+.thumbnail>div {
+    overflow: hidden;
+
+}
+
+.thumbnail img {
+    width: 100%;
+    transition: 0.5s;
+}
+
+.thumbnail img:hover {
+    transform: scale(1.2, 1.2);
+} 
+    .al {
+      width: 1920px;
+      display: flex;
+      flex-direction: row;
+      background-color: #FFF4F6FE;
+     }
+     .al2{
+       margin-left: 500px;
+     }
+    
+
+
+/*     商务合作
+ */    
+
+    .flex-bg5 img{
+        width: 100%;
+        height: 840px;
+    }
+ 	.flex-bg5 ul {
+ 		text-align: center;
+ 		margin-top: 181px;
+ 	}
+ 	.flex-bg5 ul .swhz1{
+ 		color: #FFFFFF;
+    	font-weight: bold;
+    	letter-spacing: 12px;
+    	font-size: 44px;
+ 	}
+ 	.flex-bg5 ul .swhz2{
+ 		color: #F6C738;
+    	font-size: 24px;
+    	font-weight: normal;
+    	letter-spacing: 3px;
+ 	}
+ 	.flex-bg5 ul .swhz3{
+ 		color: #FFFFFF;
+ 		font-size: 26px;
+ 		font-weight: normal;
+ 	}
+
+
+
+
+
+
+
+

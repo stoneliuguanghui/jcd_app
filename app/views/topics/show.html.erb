@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>kk</title>
+</head>
+
+<body>
+    <div class="flex-nav">
+        <div class="nav-logo">
+            <%= image_tag(@topic.find_by(name:"logo_jinchengda_logo").avatar_url)%>
+            <ul>
+                <span><a href="#anchor">首页</a></span>
+                <span><a href="#anchor2">公司简介</a></span>
+                <span><a href="#anchor3">企业优势</a></span>
+                <span><a href="#anchor4">案例展示</a></span>
+                <span><a href="#anchor5">商务合作</a></span>
+            </ul>
+        </div>
+    </div>
+    <div class='fle-container'>
+        <div class="fle-item fle-bg1">
+            <div id="box1">
+                <a name="anchor"></a>
+                <div id="lbt1">
+                    <li class="lb1">
+                        <%= image_tag(@topic.find_by(name:"banner_img").avatar_url)%>
+                    </li>
+                    <li class="lb1">
+<!--                         <%= image_tag(@topic.find_by(name:"banner2_img").avatar_url)%>
+ -->                    </li>
+                </div>
+                <div class="btn1" id="prev1"><a name="anchor2"></a>prev</div>
+                <div class="btn1" id="next1">next</div>
+            </div>
+        </div>
+         <div class="flex-item flex-bg2">
+         	 <%= image_tag(@topic.find_by(name:"bannergsjj").avatar_url)%>
+        	<div class="flex-itemgsjj">
+        		<ul>
+        			<div class="gsjj1" id="j1">公司简介</div>
+        			<div class="gsjj2" id="j2">COMPANY PROFILE</div>
+        		</br>
+        			<div class="gsjj3" id="j3">广州金诚达科技有限公司成立于2015年，聚焦在各大平台返利领域。 通过数据分析、消费者需求洞察、专业技术开发、专利外观设计等模式 旨在“让每个人能够最实惠地享受到优质的科技生活”，持续创造让用户惊喜的产品。 以高效、快速、高质量、低成本、经验丰富的企业优势，良好的市场服务，赢得了市场及客户的信赖。</div>
+        		</ul>
+        	</div>
+        	<div class="flex-itemgsjj">
+
+                <%=image_tag(@topic.find_by(name:"bannergongsijianjie").avatar_url)%>
+        	</div>
+           <a name="anchor3"></a>
+        </div>
+        <div class="fle_item">b3</div>
+        <div class="fle_item fle_item1">b4</div>
+        <div class="fle_item fle_item2">b5</div>
+    </div>
+</body>
+
+</html>
