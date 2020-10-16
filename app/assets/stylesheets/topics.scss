@@ -2,14 +2,14 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 body{
-	             background-color: lightgoldenrodyellow;
+	             background-color: #ffffff;
 
 }
 
 /* 导航栏*/
  .fle-nav{
 
-        width: 100%;
+    width: 100%;
     height: 120px;
     opacity:0.4;
     position: fixed;
@@ -397,4 +397,332 @@ body{
 
 
 
+
+
+
+
+
+
+
+
+@charset "utf-8";
+#wrap {
+  position: relative;
+  max-width: 1920px;
+  min-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 16px;
+  color: #222;
+}
+#hd-wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 76px;
+  color: #fff;
+  z-index: 100;
+}
+#hd-wrap .hd {
+  width: 1100px;
+  margin: auto;
+  height: 100%;
+}
+#hd-wrap .hd .logo {
+  float: left;
+}
+#hd-wrap .hd .logo img {
+  margin-top: 15px;
+}
+#hd-wrap .hd .logo .logo-02 {
+  display: none;
+}
+#hd-wrap .hd .nav {
+  float: right;
+  margin-top: 22px;
+}
+#hd-wrap .hd .nav > li {
+  float: left;
+  margin-left: 45px;
+  padding: 5px 0;
+  cursor: pointer;
+}
+#hd-wrap .hd .nav > li a {
+  color: inherit;
+  text-decoration: inherit;
+}
+#hd-wrap .hd .nav > li.nav-active {
+  /* border-bottom: 2px solid #c7a06f; */
+}
+#hd-wrap.hd-wrap-02 {
+  background-color: #fff;
+  color: #222;
+}
+#hd-wrap.hd-wrap-02 .hd .logo .logo-01 {
+  display: none;
+}
+#hd-wrap.hd-wrap-02 .hd .logo .logo-02 {
+  display: inline;
+}
+#banner {
+  width: 100%;
+}
+#banner .swiper-container {
+  height: 100%;
+  --swiper-pagination-color: #fff;
+}
+#banner .swiper-container .swiper-slide {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#enterprise {
+  height: 890px;
+  text-align: center;
+}
+#enterprise .ep-img01 {
+  padding-top: 80px;
+  padding-bottom: 48px;
+}
+#enterprise .ep-img02 {
+  padding-top: 49px;
+  padding-bottom: 52px;
+}
+#enterprise .ep-business-text {
+  line-height: 1.5;
+}
+.ep-business-text p{
+      /* letter-spacing:3px; */
+          line-height: 30px;
+
+}
+#progress {
+  width: 100%;
+  height: 763px;
+  background-image: url(https://www.honbow.com/static/img/index/progress-01.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#advantage {
+  width: 100%;
+  height: 1094px;
+  background-image: url(http://tmp-image-bucket.igolife.net/uploads/image/avatar/42/fazhanlicheng.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#brand {
+  height: 840px;
+  text-align: center;
+}
+#brand .brand-title {
+  padding-top: 158px;
+}
+#brand .brand-list {
+  padding-top: 70px;
+}
+#brand .brand-list .brand-content-item {
+  display: inline-block;
+  width: 260px;
+  margin-right: 140px;
+  vertical-align: top;
+}
+#brand .brand-list .brand-content-item:last-child {
+  margin-right: 0;
+}
+#brand .brand-list .brand-content-item .brand-content-item-logo {
+  width: 202px;
+  height: 202px;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+}
+#brand .brand-list .brand-content-item.brand-content-item-1 .brand-content-item-logo {
+  background-image: url(http://tmp-image-bucket.igolife.net/uploads/image/avatar/27/gaoxiaolv_img.png);
+/*   https://www.honbow.com/static/img/index/brand-02-01.png
+ */}
+#brand .brand-list .brand-content-item.brand-content-item-1 .brand-content-item-logo:hover {
+  background-image: url(https://www.honbow.com/static/img/index/brand-02-02.png);
+/*   https://www.honbow.com/static/img/index/brand-02-02.png
+ */}
+#brand .brand-list .brand-content-item.brand-content-item-2 .brand-content-item-logo {
+  background-image: url(http://tmp-image-bucket.igolife.net/uploads/image/avatar/28/jingyanfengfu_img.png);
+/*   https://www.honbow.com/static/img/index/brand-03-01.png
+ */}
+#brand .brand-list .brand-content-item.brand-content-item-2 .brand-content-item-logo:hover {
+  background-image: url(https://www.honbow.com/static/img/index/brand-03-02.png);
+/*   https://www.honbow.com/static/img/index/brand-03-02.png
+ */}
+#brand .brand-list .brand-content-item.brand-content-item-3 .brand-content-item-logo {
+  background-image: url(http://tmp-image-bucket.igolife.net/uploads/image/avatar/29/jiagedi_img.png);
+/*   https://www.honbow.com/static/img/index/brand-04-01.png
+ */}
+#brand .brand-list .brand-content-item.brand-content-item-3 .brand-content-item-logo:hover {
+  background-image: url(https://www.honbow.com/static/img/index/brand-04-02.png);
+/*   https://www.honbow.com/static/img/index/brand-04-02.png
+ */}
+#brand .brand-list .brand-content-item .brand-content-item-title {
+  padding-top: 26px;
+  font-size: 18px;
+}
+#brand .brand-list .brand-content-item .brand-content-item-desc {
+  padding-top: 18px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+#plan {
+  width: 100%;
+  height: 1300px;
+  background-image: url(https://www.honbow.com/static/img/index/plan-01.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
+#plan .plan-title {
+  padding-top: 154px;
+}
+#plan .plan-list {
+  padding-top: 62px;
+  width: 1105px;
+  margin: auto;
+}
+#plan .plan-list .plan-item {
+  display: inline-block;
+  width: 252px;
+  height: 410px;
+  padding: 62px 48px 0 48px;
+  margin-right: 26px;
+  background-color: #fff;
+  vertical-align: top;
+}
+#plan .plan-list .plan-item:last-child {
+  margin-right: 0;
+}
+#plan .plan-list .plan-item .plan-item-img {
+  height: 26px;
+  background-repeat: no-repeat;
+}
+#plan .plan-list .plan-item .plan-item-title {
+  padding-top: 66px;
+  padding-bottom: 28px;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: -12px;
+}
+#plan .plan-list .plan-item .plan-item-desc {
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: left;
+}
+#plan .plan-list .plan-item:hover {
+  color: #fff;
+  background-color: #3caaff;
+}
+#cooperation {
+  height: 560px;
+  text-align: center;
+}
+#cooperation .ct-title {
+  padding-top: 140px;
+}
+#cooperation .ct-desc {
+  padding-top: 56px;
+}
+#cooperation .ct-contact {
+  padding-top: 52px;
+}
+#cooperation .ct-contact strong {
+  font-weight: bold;
+  color: #000;
+}
+#join {
+  height: 313px;
+  background-image: url(http://tmp-image-bucket.igolife.net/uploads/image/avatar/41/hezuoliucheng.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
+#join .join-title {
+  padding-top: 150px;
+}
+#join .join-desc {
+  padding-top: 50px;
+  line-height: 1.5;
+  color: #fff;
+}
+#join .join-more {
+  padding-top: 48px;
+}
+#join .join-more a {
+  display: inline-block;
+  width: 166px;
+  height: 48px;
+  color: #fff;
+  line-height: 48px;
+  background-color: #3baaff;
+  cursor: pointer;
+}
+#join .join-more a:hover {
+  background-color: #2794e7;
+}
+#footer {
+  height: 147px;
+  padding-top: 50px;
+  background-color: #183051;
+  color: #fff;
+  line-height: 1.5;
+}
+#footer .footer-content {
+  position: relative;
+  width: 670px;
+  margin: auto;
+  text-align: left;
+}
+#footer .footer-content .qr {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.banner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    -o-transition-property: transform;
+    transition-property: transform;
+    transition-property: transform,-webkit-transform;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+
+}
+
+.banner img{
+    width: 100%;
+    height: 100%;
+}
+
+#boxs{
+    overflow: hidden;
+    width: 1105px;  
+    margin: auto;
+    border: 1 solid;
+    position: relative;
+}
+
+#boxs ul{
+    position: absolute;
+ }
+#boxs ul li{
+    float: left;
+ }
 

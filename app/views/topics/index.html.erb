@@ -16,7 +16,10 @@
             </ul>
         </div>
     </div>
+<!--  <div class="swiper-wrapper">
+                    <a href="./index.html" class="swiper-slide" style="background-image: url(https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=2625008281,94811485&fm=26&gp=0.jpg)" target="_blank"></a> 
 
+                </div> -->
 	<div class="flex-container">
 
         		
@@ -43,7 +46,7 @@
         			<div class="gsjj1" id="j1">公司简介</div>
         			<div class="gsjj2" id="j2">COMPANY PROFILE</div>
         		</br>
-        			<div class="gsjj3" id="j3">广州金诚达科技有限公司成立于2015年，聚焦在各大平台返利领域。 通过数据分析、消费者需求洞察、专业技术开发、专利外观设计等模式 旨在“让每个人能够最实惠地享受到优质的科技生活”，持续创造让用户惊喜的产品。 以高效、快速、高质量、低成本、经验丰富的企业优势，良好的市场服务，赢得了市场及客户的信赖。</div>
+        			<div class="gsjj3" id="j3"><%=@versions.find(1).content%></div>
         		</ul>
         	</div>
         	<div class="flex-itemgsjj">
@@ -100,7 +103,7 @@
         		<ul>
         			<div class="alzs1">案例展示</div>
         			<div class="alzs2">CASE SHOW</div>
-        			<div class="alzs3">提供消费者多元化，优质产品信息窗口， 集合行业专业选品团队的优质产品信息，提供给消费者，物美价廉的先上产品， 从而打动消费者 赢得良好口碑，实现平台价值</div>
+        			<div class="alzs3"><%=@cases.find_by(name:"案例展示").introduct%></div>
         		</ul>
         	</div>
         	<div class="flex-itemalzs2">
@@ -110,7 +113,7 @@
                      <%=image_tag(@topic.find_by(name:"case_i-gouyoupin_logo").avatar_url)%>
                     </a>    
                     </div>
-                    <div class="al2">综合性购物返利及购物优惠平台</div>
+                    <div class="al2"><%=@cases.find_by(name:"案例展示").ishop%></div>
         		</div>
         		<div class="flex-itemlogo2 al">
                     <div class="al1">
@@ -118,7 +121,7 @@
                         <%=image_tag(@topic.find_by(name:"case_chengzijie").avatar_url)%>
      			</a>
                     </div>
-                    <div class="al2">综合性购物返利、加油优惠平台</div>
+                    <div class="al2"><%=@cases.find_by(name:"案例展示").orange%></div>
         		</div>
         		<div class="flex-itemlogo2 al">
                     <div class="al1">
@@ -126,7 +129,7 @@
                         <%=image_tag(@topic.find_by(name:"rishengmeizhuang").avatar_url)%>
         			</a>	
                     </div>
-                    <div class="al2">美妆专营购物平台</div>
+                    <div class="al2"><%=@cases.find_by(name:"案例展示").rsheng%></div>
         		</div>
         		<div class="flex-itemlogo2 al">
                     <div class="al1">
@@ -134,7 +137,7 @@
                          <%=image_tag(@topic.find_by(name:"case_zhongyu").avatar_url)%>
         			</a>
                     </div>
-                    <div class="al2">人力资源管理、财税服务、法力服务等综合性服务平台</div>
+                    <div class="al2"><%=@cases.find_by(name:"案例展示").law%></div>
 					
         		</div>
         	
@@ -145,7 +148,7 @@
                         <%=image_tag(@topic.find_by(name:"case_zhonghuiying").avatar_url)%>
         			</a>
                     </div>
-                    <div class="al2">财富金融购物娱乐平台</div>
+                    <div class="al2"><%=@cases.find_by(name:"案例展示").wealth%></div>
 					
         		</div>
         		<div class="flex-itemlogo2 al">
@@ -154,7 +157,7 @@
                         <%=image_tag(@topic.find_by(name:"case_wantejuhe").avatar_url)%>
         			</a>
                     </div>
-                    <div class="al2">新型的商业盈利模式平台</div>
+                    <div class="al2"><%=@cases.find_by(name:"案例展示").wangt%></div>
 					
         		</div>
         		<div class="flex-itemlogo2 al">
@@ -163,7 +166,7 @@
                         <%=image_tag(@topic.find_by(name:"case_xibaohui").avatar_url)%>
         			</a>
                     </div>
-                    <div class="al2">新型的商业盈利模式平台</div>
+                    <div class="al2"><%=@cases.find_by(name:"案例展示").xibaohui%></div>
 					
         		</div>
         		<div class="flex-itemlogo2 al">
@@ -172,7 +175,7 @@
                         <%=image_tag(@topic.find_by(name:"case_quanbuanli").avatar_url)%>
 					</a>
                     </div>
-                    <div class="al2">查看全部案例请联系我们</div>
+                    <div class="al2"><%=@cases.find_by(name:"案例展示").contact%></div>
                     <a name="anchor5"></a>
         		</div>
         	</div>

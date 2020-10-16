@@ -1,6 +1,9 @@
 class TopicsController < ApplicationController
   def index
   	@topic=Topic.all
+    @versions=Version.all
+    @cases=Case.all
+    @images=Image.all
   end
 
   def show
@@ -18,12 +21,25 @@ class TopicsController < ApplicationController
 
   	end
   end
+  def edit
+    @topic=Topic.find(:id)
+  end
 
   def update
+    @topic=Topic.find(params[:id])
+    if @topic.update(introduce_params)
+      redirect_to edit_topic_path
+    else
+      render "edit"
+    end
   end
 
   private
   def image_params
-  	params.require(:topic).permit(:avatar,:name)
+  	params.require(:topic).permit(:avatar,:name,:gsjj)
+  end
+
+  def introduce_params
+    params.require(:topic).permit(:gsjj)
   end
 end
