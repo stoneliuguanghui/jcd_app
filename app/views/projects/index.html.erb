@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>洪堡科技</title>
+    <link rel="shortcut icon" href="https://www.honbow.com/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://www.honbow.com/static/common/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.min.css">
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="hd-wrap">
+            <div class="hd">
+                <div class="logo">
+                    <a href="./index.html">
+                    	<%=image_tag(Image.all.find_by(name:"公司logo1").avatar_url,:class=>'logo-01')%>
+                    	<%=image_tag(Image.all.find_by(name:"公司logo3").avatar_url,:class=>'logo-02')%>	
+                    </a>
+                </div>
+                <ul class="nav">
+                    <li data-a="enterprise" class="nav-active">关于金诚达</li>
+                    <li data-a="advantage">发展历程</li>
+                    <li data-a="brand">企业优势</li>
+                    <li data-a="plan">案例展示</li>
+                    
+                    <li data-a="cooperation">商业合作</li>
+                    
+                    
+                    <li data-a="join">合作流程</li>
+                </ul>
+            </div>
+        </header>
+        <div id="banner">
+            <div class="swiper-container">
+                <div class="banner">
+                	<%=image_tag(Image.all.find_by(name:"banner").avatar_url)%>
+
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div id="enterprise">
+        	<%=image_tag(Image.all.find_by(name:"关于公司").avatar_url,:class=>'ep-img01')%>
+            <div class="ep-business-text">
+            	<p><%=@versions.find(2).content%></p>
+            	<p><%=@versions.find(3).content%></p>
+            	<p><%=@versions.find(4).content%></p>
+            	<p><%=@versions.find(5).content%></p>
+            	<p><%=@versions.find(6).content%></p>
+            	<p><%=@versions.find(7).content%></p>
+            	<p><%=@versions.find(8).content%></p>
+            </div>
+            <%=image_tag(Image.all.find_by(name:"公司home").avatar_url,:class=>'ep-img02')%>
+        </div>
+        <div id="advantage"></div>
+        <div id="brand">
+        	<%=image_tag(Image.all.find_by(name:"企业优势").avatar_url,:class=>'brand-title')%>
+            <ul class="brand-list">
+                <li class="brand-content-item brand-content-item-1">
+                    <a href="https://www.letscom.com" target="_blank"><div class="brand-content-item-logo"></div></a>
+                    <div class="brand-content-item-title">高效率</div>
+                    <div class="brand-content-item-desc"><%=@versions.find(9).content%> </div>
+                </li>
+                <li class="brand-content-item brand-content-item-2">
+                    <a href="https://www.letsfit.com" target="_blank"><div class="brand-content-item-logo"></div></a>
+                    <div class="brand-content-item-title">经验丰富</div>
+                    <div class="brand-content-item-desc"><%=@versions.find(10).content%> </div>
+                </li>
+                <li class="brand-content-item brand-content-item-3">
+                    <a href="http://www.anbes.com" target="_blank"><div class="brand-content-item-logo"></div></a>
+                    <div class="brand-content-item-title">价格低</div>
+                    <div class="brand-content-item-desc"><%=@versions.find(11).content%> </div>
+                </li>
+            </ul>
+        </div>
+        <!-- <div id="news"></div> -->
+        <div id="plan">
+        	<%=image_tag(Image.all.find_by(name:"案例展示").avatar_url,:class=>'plan-title')%>
+            <div id="box">
+
+            <ul class="plan-list">
+                <li class="plan-item">
+                    <div class="plan-item-img"><%=image_tag(Image.all.find_by(name:"方案1").avatar_url)%></div>
+                    <div class="plan-item-title">健悦美</div>
+                    <div class="plan-item-desc">基于DTC（Direct To Consumer）模式下的“数据赋能“产品开发模式，我们通过大数据和海外客服团队，分析研究市场和用户真实的需求与痛点，规划设计符合消费者需求的产品。</div>
+                </li>
+                <li class="plan-item">
+                    <div class="plan-item-img"><%=image_tag(Image.all.find_by(name:"方案2").avatar_url)%></div>
+                    <div class="plan-item-title">i 购优品</div>
+                    <div class="plan-item-desc">洪堡具有深厚的技术和设计积淀，研发人员占比超30%，包含完整的研发体系。此外，我们也积极同国内外优秀的设计工作室合作，不断为用户提供创新而极致的产品和体验。</div>
+                </li>
+                <li class="plan-item">
+                    <div class="plan-item-img"><%=image_tag(Image.all.find_by(name:"方案3").avatar_url)%></div>
+                    <div class="plan-item-title">骑士法助手</div>
+                    <div class="plan-item-desc">经过多年发展，我们拥有国内一流的供应链和良性产业链循环。通过严格的品质把握，100%入场全检，保证产品生产的一致性和高效性。</div>
+                </li>
+                <li class="plan-item">
+                    <div class="plan-item-img"><%=image_tag(Image.all.find_by(name:"方案4").avatar_url)%></div>
+                    <div class="plan-item-title">趣酷城</div>
+                    <div class="plan-item-desc">依托即时有效的数据反馈和卓越的供应链管理，结合美国海外仓和亚马逊FBA物流，保证用户享受高效便捷的服务。</div>
+                </li>
+            </ul>	
+
+
+
+
+
+
+
+            <ul class="plan-list">
+                <li class="plan-item">
+                    <div class="plan-item-img"><%=image_tag(Image.all.find_by(name:"方案5").avatar_url)%></div>
+                    <div class="plan-item-title">喜宝汇</div>
+                    <div class="plan-item-desc">基于DTC（Direct To Consumer）模式下的“数据赋能“产品开发模式，我们通过大数据和海外客服团队，分析研究市场和用户真实的需求与痛点，规划设计符合消费者需求的产品。</div>
+                </li>
+                <li class="plan-item">
+                    <div class="plan-item-img"><%=image_tag(Image.all.find_by(name:"方案6").avatar_url)%></div>
+                    <div class="plan-item-title">万特云商</div>
+                    <div class="plan-item-desc">洪堡具有深厚的技术和设计积淀，研发人员占比超30%，包含完整的研发体系。此外，我们也积极同国内外优秀的设计工作室合作，不断为用户提供创新而极致的产品和体验。</div>
+                </li>
+                <li class="plan-item">
+                    <div class="plan-item-img"><%=image_tag(Image.all.find_by(name:"方案7").avatar_url)%></div>
+                    <div class="plan-item-title">橙子街</div>
+                    <div class="plan-item-desc">经过多年发展，我们拥有国内一流的供应链和良性产业链循环。通过严格的品质把握，100%入场全检，保证产品生产的一致性和高效性。</div>
+                </li>
+                <li class="plan-item">
+                    <div class="plan-item-img"><%=image_tag(Image.all.find_by(name:"方案8").avatar_url)%></div>
+                    <div class="plan-item-title">日晟美妆</div>
+                    <div class="plan-item-desc">依托即时有效的数据反馈和卓越的供应链管理，结合美国海外仓和亚马逊FBA物流，保证用户享受高效便捷的服务。</div>
+                </li>
+            </ul>	
+            </div>
+            <div class="pava-ul">
+            	<ul>
+            		<li class="act"></li>
+            		<li></li>
+            		<li></li>
+            		<li></li>
+            	</ul>
+            </div>
+
+
+        </div>
+        <div id="cooperation">
+        	<%=image_tag(Image.all.find_by(name:"商业合作").avatar_url,:class=>'ct-title')%>
+            <div class="ct-desc">始终秉持与供应商优势互补、相互成就的合作理念，联系我们，成为洪堡合作伙伴！</div>
+            <div class="ct-contact">微信客服:<strong>OrangesStreet</strong><br><br>邮箱：<a href="mailto:sourcing@honbow.com" style="font-weight: bold;">sourcing@honbow.com</a><br><br>公司地址：广州市天河区黄村北路26号D 区二楼60028室</div>
+        </div>
+        <div id="join">
+            
+        </div >
+        <footer id="footer">
+           <div class="footer-content">
+                <p><a href="http://www.beian.miit.gov.cn/" target="_blank" style="color: #fff; width: 56px;">粤CP备123456号-1</a></p>
+                <p>最终所有权归金诚达科技所有，商业媒体及纸媒请先联系：<a href="mailto:info@honbow.com" style="color: #fff;">65289927@qq.com</a></p>
+                <!-- <img src="https://www.honbow.com/static/img/qr.png" alt="Qr" class="qr"> -->
+           </div>
+        </footer>
+    </div>
+    <script src="https://www.honbow.com/static/common/jquery.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://www.honbow.com/static/common/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../../javascript/base.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://www.honbow.com/js/index.js" type="text/javascript" charset="utf-8"></script>
+</body>
+
+
+
+
+
+
+</html>

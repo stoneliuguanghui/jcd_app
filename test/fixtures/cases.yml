@@ -1,0 +1,25 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  introduct: MyText
+  ishop: MyText
+  orange: MyText
+  rsheng: MyText
+  law: MyText
+  wealth: MyText
+  wangt: MyText
+  xibaohui: MyText
+  contact: MyText
+  name: MyString
+
+two:
+  introduct: MyText
+  ishop: MyText
+  orange: MyText
+  rsheng: MyText
+  law: MyText
+  wealth: MyText
+  wangt: MyText
+  xibaohui: MyText
+  contact: MyText
+  name: MyString
